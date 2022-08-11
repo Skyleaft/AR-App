@@ -370,8 +370,8 @@ MonoBehaviour:
   LoadingSceneName: Loading
   FadeInLoadingScreen: 1
   FadeOutLoadingScreen: 1
-  FadeSeconds: 1
-  MinimumLoadingScreenSeconds: 1
+  FadeSeconds: 0.4
+  MinimumLoadingScreenSeconds: 0.3
   FadeColor: {r: 0.9245283, g: 0.82988876, b: 0.49279103, a: 1}
   Progress: 0
 --- !u!1 &173340
