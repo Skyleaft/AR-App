@@ -222,22 +222,23 @@ MonoBehaviour:
   Id: object4
   UserControl: 1
   AIControl: 1
-  ReturnSmoothly: 0
+  ReturnSmoothly: 1
   ReturnSpeed: 1
   ScaleOnDrag: 0
-  DragScale: {x: 1, y: 1, z: 1}
+  DragScale: {x: 1.3, y: 1.3, z: 1.3}
   StayDroppedPos: 0
   ScaleOnDropped: 0
   DropScale: {x: 1, y: 1, z: 1}
   LockObject: 0
-  ReturnObject: 0
+  ReturnObject: 1
   ReplaceSmoothly: 0
   ReplacementSpeed: 1
   SwitchObjects: 0
-  MoveSmoothly: 0
+  MoveSmoothly: 1
   MovementSpeed: 1
-  FilterPanels: 0
-  AllowedPanels: []
+  FilterPanels: 1
+  AllowedPanels:
+  - panel1
   OnBeginDragging:
     m_PersistentCalls:
       m_Calls: []
@@ -358,22 +359,23 @@ MonoBehaviour:
   Id: object3
   UserControl: 1
   AIControl: 1
-  ReturnSmoothly: 0
+  ReturnSmoothly: 1
   ReturnSpeed: 1
   ScaleOnDrag: 0
-  DragScale: {x: 1, y: 1, z: 1}
+  DragScale: {x: 1.3, y: 1.3, z: 1.3}
   StayDroppedPos: 0
   ScaleOnDropped: 0
   DropScale: {x: 1, y: 1, z: 1}
   LockObject: 0
-  ReturnObject: 0
+  ReturnObject: 1
   ReplaceSmoothly: 0
   ReplacementSpeed: 1
   SwitchObjects: 0
-  MoveSmoothly: 0
+  MoveSmoothly: 1
   MovementSpeed: 1
-  FilterPanels: 0
-  AllowedPanels: []
+  FilterPanels: 1
+  AllowedPanels:
+  - panel1
   OnBeginDragging:
     m_PersistentCalls:
       m_Calls: []
@@ -561,22 +563,23 @@ MonoBehaviour:
   Id: object2
   UserControl: 1
   AIControl: 1
-  ReturnSmoothly: 0
+  ReturnSmoothly: 1
   ReturnSpeed: 1
   ScaleOnDrag: 0
-  DragScale: {x: 1, y: 1, z: 1}
+  DragScale: {x: 1.3, y: 1.3, z: 1.3}
   StayDroppedPos: 0
   ScaleOnDropped: 0
   DropScale: {x: 1, y: 1, z: 1}
   LockObject: 0
-  ReturnObject: 0
+  ReturnObject: 1
   ReplaceSmoothly: 0
   ReplacementSpeed: 1
   SwitchObjects: 0
-  MoveSmoothly: 0
+  MoveSmoothly: 1
   MovementSpeed: 1
-  FilterPanels: 0
-  AllowedPanels: []
+  FilterPanels: 1
+  AllowedPanels:
+  - panel1
   OnBeginDragging:
     m_PersistentCalls:
       m_Calls: []
@@ -805,7 +808,7 @@ MonoBehaviour:
   Id: object1
   UserControl: 1
   AIControl: 1
-  ReturnSmoothly: 0
+  ReturnSmoothly: 1
   ReturnSpeed: 1
   ScaleOnDrag: 0
   DragScale: {x: 1, y: 1, z: 1}
@@ -813,16 +816,15 @@ MonoBehaviour:
   ScaleOnDropped: 0
   DropScale: {x: 1, y: 1, z: 1}
   LockObject: 0
-  ReturnObject: 0
+  ReturnObject: 1
   ReplaceSmoothly: 0
   ReplacementSpeed: 1
   SwitchObjects: 0
   MoveSmoothly: 0
   MovementSpeed: 1
-  FilterPanels: 0
+  FilterPanels: 1
   AllowedPanels:
   - panel1
-  - panel2
   OnBeginDragging:
     m_PersistentCalls:
       m_Calls: []
