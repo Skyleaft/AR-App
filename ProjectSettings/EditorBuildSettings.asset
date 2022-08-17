@@ -17,6 +17,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BlankAR.unity
     guid: 6bdce89659816455b9f906fc62d19910
+  - enabled: 1
+    path: Assets/Scenes/Baca.unity
+    guid: d053b13f4d655d64c997951b00e6b72f
+  - enabled: 0
+    path: Assets/KKSpeechRecognizer/Example/SetLanguage.unity
+    guid: 559332467ea974437a4d905a158faa1a
+  - enabled: 0
+    path: Assets/KKSpeechRecognizer/Example/ExampleScene.unity
+    guid: 1a1e869bff86843f48395c9dc3c133e8
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
