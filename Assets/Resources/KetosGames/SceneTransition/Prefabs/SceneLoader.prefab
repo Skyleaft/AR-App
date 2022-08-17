@@ -307,6 +307,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1000
   m_TargetDisplay: 0
@@ -371,7 +372,7 @@ MonoBehaviour:
   FadeInLoadingScreen: 1
   FadeOutLoadingScreen: 1
   FadeSeconds: 0.4
-  MinimumLoadingScreenSeconds: 0.3
+  MinimumLoadingScreenSeconds: 0.1
   FadeColor: {r: 0.9245283, g: 0.82988876, b: 0.49279103, a: 1}
   Progress: 0
 --- !u!1 &173340

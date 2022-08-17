@@ -5,56 +5,82 @@ using UnityEngine.UI;
 
 public class HurufManager : MonoBehaviour
 {
-    public List<ObjekHuruf> hurufList;
+    public List<ObjekHurufScriptable> hurufList;
+    public List<ObjectSettings> TargetObject;
     public DragDropManager dragDropManager;
     public Image targetImage;
 
     private PanelSettings _panel;
-    private ObjectSettings _objectSettings;
     private int targetNum;
-    void Awake()
+    private int targetSegment;
+
+    List<int> usedValues = new List<int>();
+
+    void Start()
     {
-        targetNum = Random.Range(0,8);
         _panel = dragDropManager.AllPanels[0];
         generateRandom();
-
-
-    }
-
-    void Update()
-    {
-        
     }
 
     public void generateRandom()
     {
-        targetNum = Random.Range(0, 8);
-        GetKelipatan3(targetNum);
-        _panel.Id = hurufList[targetNum].nama;
-        targetImage.sprite = hurufList[targetNum].image;
-        int randomNum = Random.Range(0, 3);
-        dragDropManager.AllObjects[randomNum].Id = hurufList[targetNum].nama;
-        dragDropManager.AllObjects[randomNum].AllowedPanels[0] = hurufList[targetNum].nama;
+        targetSegment = Random.Range(1,4);
+        Debug.Log(targetSegment);
+        if (targetSegment == 1)
+        {
+            targetNum = Random.Range(0, 3);
+            _panel.Id = hurufList[targetNum].nama;
+            targetImage.sprite = hurufList[targetNum].image;
+            foreach(ObjectSettings obj in TargetObject)
+            {
+                int uniq = UniqueRandomInt(0, 3);
+                obj.Id = hurufList[uniq].nama;
+                obj.AllowedPanels[0] = hurufList[uniq].nama;
+            }
+            usedValues.Clear();
+
+        }
+        else if (targetSegment == 2)
+        {
+            targetNum = Random.Range(3, 6);
+            _panel.Id = hurufList[targetNum].nama;
+            targetImage.sprite = hurufList[targetNum].image;
+            foreach (ObjectSettings obj in TargetObject)
+            {
+                int uniq = UniqueRandomInt(3, 6);
+                obj.Id = hurufList[uniq].nama;
+                obj.AllowedPanels[0] = hurufList[uniq].nama;
+            }
+            usedValues.Clear();
+
+        }
+        else if (targetSegment == 3)
+        {
+            targetNum = Random.Range(6, 9);
+            _panel.Id = hurufList[targetNum].nama;
+            targetImage.sprite = hurufList[targetNum].image;
+            foreach (ObjectSettings obj in TargetObject)
+            {
+                int uniq = UniqueRandomInt(6, 9);
+                obj.Id = hurufList[uniq].nama;
+                obj.AllowedPanels[0] = hurufList[uniq].nama;
+            }
+            usedValues.Clear();
+        }
     }
 
-    public void GetKelipatan3(int _number)
+    public int UniqueRandomInt(int min, int max)
     {
-        if (_number % 3 == 0 && _number % 5 == 0)
+        int val = Random.Range(min, max);
+        while (usedValues.Contains(val))
         {
-            Debug.Log(_number + " FizzBuzz");
+            val = Random.Range(min, max);
         }
-        else if (_number % 3 == 0)
-        {
-            Debug.Log(_number + " Fizz");
-        }
-        else if (_number % 5 == 0)
-        {
-            Debug.Log(_number + " Buzz");
-        }
-        else
-        {
-            Debug.Log(_number);
-        }
+        usedValues.Add(val);
+        return val;
     }
+
+
+
 
 }
