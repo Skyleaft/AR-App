@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nama: Balok
   image: {fileID: 21300000, guid: 411e0c77b2b79e24996ad61bc9a6b182, type: 3}
+  objek: {fileID: 3616562849298755757, guid: c818c9c8292c43d48a5ae5032a7c8318, type: 3}

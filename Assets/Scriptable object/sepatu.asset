@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nama: Sepatu
   image: {fileID: 21300000, guid: 065a99c3c818e68419a5c14e8e1b3804, type: 3}
+  objek: {fileID: 2911656975621359900, guid: 3e0c9681a61c50e4689996fbac616546, type: 3}

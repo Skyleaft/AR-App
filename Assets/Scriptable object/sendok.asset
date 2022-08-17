@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nama: Sendok
   image: {fileID: 21300000, guid: 508e6edb58279274c9717a201d1ce54e, type: 3}
+  objek: {fileID: 7867174488888035043, guid: 47087ae193ceeec45828f86c6378f930, type: 3}

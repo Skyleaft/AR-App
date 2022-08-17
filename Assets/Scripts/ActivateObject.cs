@@ -24,7 +24,6 @@ public class ActivateObject : MonoBehaviour
             {
                 if (hit.transform.tag == "Object")
                 {
-
                     var objectScript = hit.collider.GetComponent<Rotator>();
                     objectScript.isActive = !objectScript.isActive;
                 }

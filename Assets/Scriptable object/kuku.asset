@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nama: Kuku
   image: {fileID: 21300000, guid: 4044fe00967027c40afadb3424e35f9f, type: 3}
+  objek: {fileID: 2722892834819795018, guid: 368ef5adfd375334090cbfc959edcd6f, type: 3}

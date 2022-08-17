@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nama: Buku
   image: {fileID: 21300000, guid: bd40a6ddf1a6f8245b67b9cb08da6963, type: 3}
-  objek: {fileID: 179489966722328702, guid: 05e01309e75808d4e924b0d098efdcec, type: 3}
+  objek: {fileID: 3370432217770905189, guid: 24fd114eabf2fee449d010fd5e9c0550, type: 3}

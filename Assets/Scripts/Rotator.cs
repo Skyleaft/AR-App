@@ -5,15 +5,12 @@ using UnityEngine;
 public class Rotator : MonoBehaviour
 {
     public bool isActive = false;
-    Color activeColor = new Color();
 
     // Update is called once per frame
     void Update()
     {
         if (isActive)
         {
-            activeColor = Color.red;
-
             if (Input.touchCount == 1)
             {
                 Touch screenTouch = Input.GetTouch(0);
@@ -29,11 +26,6 @@ public class Rotator : MonoBehaviour
                 }
             }
         }
-        else
-        {
-            activeColor = Color.white;
-        }
 
-        GetComponent<MeshRenderer>().material.color = activeColor;
     }
 }

@@ -14,11 +14,14 @@ public class HurufManager : MonoBehaviour
     private int targetNum;
     private int targetSegment;
 
+    private CurrentObject current;
+
     List<int> usedValues = new List<int>();
 
     void Start()
     {
         _panel = dragDropManager.AllPanels[0];
+        current = GameObject.FindGameObjectWithTag("Current").GetComponent<CurrentObject>();
         generateRandom();
     }
 
@@ -30,6 +33,7 @@ public class HurufManager : MonoBehaviour
         {
             targetNum = Random.Range(0, 3);
             _panel.Id = hurufList[targetNum].nama;
+            current.setObject(hurufList[targetNum]);
             targetImage.sprite = hurufList[targetNum].image;
             foreach(ObjectSettings obj in TargetObject)
             {
@@ -44,6 +48,7 @@ public class HurufManager : MonoBehaviour
         {
             targetNum = Random.Range(3, 6);
             _panel.Id = hurufList[targetNum].nama;
+            current.setObject(hurufList[targetNum]);
             targetImage.sprite = hurufList[targetNum].image;
             foreach (ObjectSettings obj in TargetObject)
             {
@@ -58,6 +63,7 @@ public class HurufManager : MonoBehaviour
         {
             targetNum = Random.Range(6, 9);
             _panel.Id = hurufList[targetNum].nama;
+            current.setObject(hurufList[targetNum]);
             targetImage.sprite = hurufList[targetNum].image;
             foreach (ObjectSettings obj in TargetObject)
             {

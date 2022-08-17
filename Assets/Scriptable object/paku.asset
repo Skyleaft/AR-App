@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nama: Paku
   image: {fileID: 21300000, guid: 420baaaebdea5d149b124020f6fd61aa, type: 3}
+  objek: {fileID: 5314497749140495113, guid: 6108fa5711f1bf5419140cad465eaaf2, type: 3}

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nama: Botol
   image: {fileID: 21300000, guid: 05ce5a37437b08c44908ca79afc4d782, type: 3}
+  objek: {fileID: 1287542265963027226, guid: 3ffeed0664860dd4fb3d84fc439bc74c, type: 3}
