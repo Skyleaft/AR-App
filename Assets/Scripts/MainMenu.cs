@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour
 
     public void baca()
     {
-        anim.SetTrigger("open3");
+        anim.SetTrigger("open5");
     }
     public void huruf()
     {
@@ -31,7 +31,7 @@ public class MainMenu : MonoBehaviour
     }
     public void kata()
     {
-        anim.SetTrigger("open3");
+        anim.SetTrigger("open4");
     }
 
     public void back()

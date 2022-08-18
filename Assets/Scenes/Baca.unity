@@ -1032,7 +1032,6 @@ GameObject:
   - component: {fileID: 695418926}
   - component: {fileID: 695418928}
   - component: {fileID: 695418927}
-  - component: {fileID: 695418929}
   m_Layer: 5
   m_Name: Text1
   m_TagString: Untagged
@@ -1158,52 +1157,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695418925}
   m_CullTransparentMesh: 1
---- !u!114 &695418929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695418925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2af487d2d9d627d46ae3fea96d22efd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FirstPos: {x: 0, y: 0, z: 0}
-  FirstScale: {x: 0, y: 0, z: 0}
-  DefaultPanel: 0
-  Dropped: 0
-  OnReturning: 0
-  Id: buku
-  UserControl: 1
-  AIControl: 1
-  ReturnSmoothly: 1
-  ReturnSpeed: 1
-  ScaleOnDrag: 0
-  DragScale: {x: 1.2, y: 1.2, z: 1.2}
-  StayDroppedPos: 0
-  ScaleOnDropped: 0
-  DropScale: {x: 1, y: 1, z: 1}
-  LockObject: 0
-  ReturnObject: 0
-  ReplaceSmoothly: 0
-  ReplacementSpeed: 1
-  SwitchObjects: 0
-  MoveSmoothly: 0
-  MovementSpeed: 1
-  FilterPanels: 1
-  AllowedPanels:
-  - panel_buku
-  OnBeginDragging:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDragDropFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDroppedSuccessfully:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &702802354
 GameObject:
   m_ObjectHideFlags: 0
@@ -2491,7 +2444,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Berhasil
+  m_text: Yeay Jawaban Kamu Benar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a26210c1c365d249becd08e1002ff68, type: 2}
   m_sharedMaterial: {fileID: 8581427027627673650, guid: 4a26210c1c365d249becd08e1002ff68,
@@ -3043,7 +2996,6 @@ GameObject:
   - component: {fileID: 1610495030}
   - component: {fileID: 1610495033}
   - component: {fileID: 1610495032}
-  - component: {fileID: 1610495031}
   m_Layer: 5
   m_Name: Text1
   m_TagString: Untagged
@@ -3071,52 +3023,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: 0, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1610495031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610495029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2af487d2d9d627d46ae3fea96d22efd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FirstPos: {x: 0, y: 0, z: 0}
-  FirstScale: {x: 0, y: 0, z: 0}
-  DefaultPanel: 0
-  Dropped: 0
-  OnReturning: 0
-  Id: buku
-  UserControl: 1
-  AIControl: 1
-  ReturnSmoothly: 1
-  ReturnSpeed: 1
-  ScaleOnDrag: 0
-  DragScale: {x: 1.2, y: 1.2, z: 1.2}
-  StayDroppedPos: 0
-  ScaleOnDropped: 0
-  DropScale: {x: 1, y: 1, z: 1}
-  LockObject: 0
-  ReturnObject: 0
-  ReplaceSmoothly: 0
-  ReplacementSpeed: 1
-  SwitchObjects: 0
-  MoveSmoothly: 0
-  MovementSpeed: 1
-  FilterPanels: 1
-  AllowedPanels:
-  - panel_buku
-  OnBeginDragging:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDragDropFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDroppedSuccessfully:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1610495032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3678,6 +3584,7 @@ MonoBehaviour:
   bacakan: {fileID: 1615556630}
   audio: {fileID: 66887876}
   sfx: {fileID: 8300000, guid: 33a31f66fb2829146a21db1d8c296c47, type: 3}
+  wrong: {fileID: 8300000, guid: 8c08c53bdd65ee7408ec28e2c8a3e07c, type: 3}
   message: {fileID: 1119295836}
   benarAnim: {fileID: 1615556632}
 --- !u!1 &1783408915
@@ -3965,7 +3872,6 @@ GameObject:
   - component: {fileID: 2078020809}
   - component: {fileID: 2078020812}
   - component: {fileID: 2078020811}
-  - component: {fileID: 2078020810}
   m_Layer: 5
   m_Name: Text1
   m_TagString: Untagged
@@ -3993,52 +3899,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: 0, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2078020810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078020808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2af487d2d9d627d46ae3fea96d22efd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FirstPos: {x: 0, y: 0, z: 0}
-  FirstScale: {x: 0, y: 0, z: 0}
-  DefaultPanel: 0
-  Dropped: 0
-  OnReturning: 0
-  Id: buku
-  UserControl: 1
-  AIControl: 1
-  ReturnSmoothly: 1
-  ReturnSpeed: 1
-  ScaleOnDrag: 0
-  DragScale: {x: 1.2, y: 1.2, z: 1.2}
-  StayDroppedPos: 0
-  ScaleOnDropped: 0
-  DropScale: {x: 1, y: 1, z: 1}
-  LockObject: 0
-  ReturnObject: 0
-  ReplaceSmoothly: 0
-  ReplacementSpeed: 1
-  SwitchObjects: 0
-  MoveSmoothly: 0
-  MovementSpeed: 1
-  FilterPanels: 1
-  AllowedPanels:
-  - panel_buku
-  OnBeginDragging:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDragDropFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDroppedSuccessfully:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &2078020811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4285,7 +4145,6 @@ GameObject:
   - component: {fileID: 2137992765}
   - component: {fileID: 2137992768}
   - component: {fileID: 2137992767}
-  - component: {fileID: 2137992766}
   m_Layer: 5
   m_Name: Text1
   m_TagString: Untagged
@@ -4313,52 +4172,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: 0, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2137992766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2137992764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2af487d2d9d627d46ae3fea96d22efd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FirstPos: {x: 0, y: 0, z: 0}
-  FirstScale: {x: 0, y: 0, z: 0}
-  DefaultPanel: 0
-  Dropped: 0
-  OnReturning: 0
-  Id: buku
-  UserControl: 1
-  AIControl: 1
-  ReturnSmoothly: 1
-  ReturnSpeed: 1
-  ScaleOnDrag: 0
-  DragScale: {x: 1.2, y: 1.2, z: 1.2}
-  StayDroppedPos: 0
-  ScaleOnDropped: 0
-  DropScale: {x: 1, y: 1, z: 1}
-  LockObject: 0
-  ReturnObject: 0
-  ReplaceSmoothly: 0
-  ReplacementSpeed: 1
-  SwitchObjects: 0
-  MoveSmoothly: 0
-  MovementSpeed: 1
-  FilterPanels: 1
-  AllowedPanels:
-  - panel_buku
-  OnBeginDragging:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDragDropFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDroppedSuccessfully:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &2137992767
 MonoBehaviour:
   m_ObjectHideFlags: 0

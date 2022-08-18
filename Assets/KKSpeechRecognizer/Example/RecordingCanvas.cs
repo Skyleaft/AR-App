@@ -14,6 +14,7 @@ public class RecordingCanvas : MonoBehaviour
     public TextMeshProUGUI bacakan;
     public AudioSource audio;
     public AudioClip sfx;
+    public AudioClip wrong;
     public Animator message;
     public Animator benarAnim;
 
@@ -60,6 +61,10 @@ public class RecordingCanvas : MonoBehaviour
             }
             
         }
+        else
+        {
+            StartCoroutine(playSalah());
+        }
         startRecordingButton.enabled = true;
       }
 
@@ -71,6 +76,14 @@ public class RecordingCanvas : MonoBehaviour
         listObjectImg[level - 1].color = Color.white;
         listObjectImg[level].color = Color.green;
         
+    }
+    IEnumerator playSalah()
+    {
+        audio.PlayOneShot(wrong);
+        benarAnim.SetTrigger("salah");
+        listObjectImg[level].color = Color.red;
+        yield return new WaitForSeconds(3f);
+        listObjectImg[level].color = Color.green;
     }
 
       public void OnPartialResult(string result)
