@@ -2233,7 +2233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438955545418a4873832308c35c70bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ToScene: Huruf
+  ToScene: Kata
 --- !u!1 &884189867
 GameObject:
   m_ObjectHideFlags: 0

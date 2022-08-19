@@ -2444,7 +2444,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Yeay Jawaban Kamu Benar
+  m_text: Yeay Jawaban Benar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a26210c1c365d249becd08e1002ff68, type: 2}
   m_sharedMaterial: {fileID: 8581427027627673650, guid: 4a26210c1c365d249becd08e1002ff68,
